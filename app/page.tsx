@@ -86,11 +86,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Why art matters</p>
-            <h2>
-              Every child deserves room
-              <br />
-              to create
-            </h2>
+            <h2> Every child deserves room to create </h2>
           </div>
           <p>
             Art is more than just an activity. It is a way for children to
