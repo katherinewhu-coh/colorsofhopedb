@@ -529,13 +529,20 @@ a {
 }
 
 .journey-copy .eyebrow,
-.impact-callout .eyebrow {
+.impact-callout .eyebrow,
+.impact-hero .eyebrow,
+.media-heading .eyebrow,
+.empty-gallery .eyebrow {
   font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
   font-size: clamp(24px, 2.3vw, 36px);
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1;
   text-transform: none;
+}
+
+.media-heading {
+  margin-bottom: 0;
 }
 
 .journey-copy ol {
