@@ -350,11 +350,6 @@ a {
   width: 8px;
 }
 
-.tiny-sun {
-  color: var(--pink);
-  font-size: 62px;
-}
-
 .mission-section blockquote {
   font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
   font-size: clamp(24px, 2.72vw, 42px);

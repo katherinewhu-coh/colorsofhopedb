@@ -72,7 +72,6 @@ export default function Home() {
             <li>Growth</li>
             <li>Resilience</li>
           </ul>
-          <div className="tiny-sun" aria-hidden="true">✳</div>
         </div>
         <blockquote>
           In a world where art is often the first thing lost during difficult
