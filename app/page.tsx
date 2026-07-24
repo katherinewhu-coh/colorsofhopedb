@@ -62,18 +62,25 @@ export default function Home() {
 
       <section className="mission-section" id="mission">
         <div className="mission-label">
-          <p className="eyebrow">Our mission</p>
+          <p className="eyebrow">
+            <span>Our</span>
+            <span>mission</span>
+          </p>
+          <ul className="mission-principles" aria-label="Mission priorities">
+            <li>Hope</li>
+            <li>Self-expression</li>
+            <li>Growth</li>
+            <li>Resilience</li>
+          </ul>
           <div className="tiny-sun" aria-hidden="true">✳</div>
         </div>
-        <div className="mission-quote-shell">
-          <blockquote>
-            In a world where art is often the first thing lost during difficult
-            circumstances—whether due to school funding cuts, or families
-            struggling financially—Colors of Hope strives to foster creativity by
-            providing art kits for children facing hardship, inspiring hope,
-            self-expression, emotional growth, and resilience.
-          </blockquote>
-        </div>
+        <blockquote>
+          In a world where art is often the first thing lost during difficult
+          circumstances—whether due to school funding cuts, or families
+          struggling financially—Colors of Hope strives to foster creativity by
+          providing art kits for children facing hardship, inspiring hope,
+          self-expression, emotional growth, and resilience.
+        </blockquote>
       </section>
 
       <section className="values-section" id="work">
@@ -92,7 +99,6 @@ export default function Home() {
           {values.map((value) => (
             <article className="value-card" key={value.number}>
               <span>{value.number}</span>
-              <div className="value-mark" aria-hidden="true" />
               <h3>{value.title}</h3>
               <p>{value.copy}</p>
             </article>

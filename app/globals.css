@@ -257,18 +257,52 @@ a {
   color: white;
   display: grid;
   gap: 7vw;
-  grid-template-columns: 0.22fr 0.78fr;
-  padding: 110px 8vw;
+  grid-template-columns: 0.3fr 0.7fr;
+  margin: 28px 0;
+  padding: 120px 8vw;
+  position: relative;
+}
+
+.mission-section::before,
+.mission-section::after {
+  content: "";
+  height: 29px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+
+.mission-section::before {
+  background: radial-gradient(
+    circle at 15px 29px,
+    var(--blue) 0 15px,
+    transparent 15.5px
+  ) 0 0 / 30px 29px repeat-x;
+  top: -28px;
+}
+
+.mission-section::after {
+  background: radial-gradient(
+    circle at 15px 0,
+    var(--blue) 0 15px,
+    transparent 15.5px
+  ) 0 0 / 30px 29px repeat-x;
+  bottom: -28px;
 }
 
 .mission-section .eyebrow {
   color: var(--pink-light);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(24px, 2.3vw, 36px);
+  font-size: clamp(54px, 6vw, 92px);
   font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1;
+  letter-spacing: -0.065em;
+  line-height: 0.82;
   text-transform: none;
+}
+
+.mission-section .eyebrow span {
+  display: block;
 }
 
 .mission-label {
@@ -278,21 +312,39 @@ a {
   justify-content: space-between;
 }
 
+.mission-principles {
+  color: rgba(255, 255, 255, 0.72);
+  display: grid;
+  font-size: 10px;
+  font-weight: 800;
+  gap: 10px;
+  letter-spacing: 0.14em;
+  list-style: none;
+  margin: 38px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.mission-principles li {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}
+
+.mission-principles li::before {
+  background: var(--pink);
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  width: 6px;
+}
+
 .tiny-sun {
   color: var(--pink);
   font-size: 62px;
 }
 
-.mission-quote-shell {
-  background:
-    radial-gradient(circle at 12px 0, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) top / 24px 14px repeat-x,
-    radial-gradient(circle at 12px 14px, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) bottom / 24px 14px repeat-x,
-    radial-gradient(circle at 0 12px, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) left / 14px 24px repeat-y,
-    radial-gradient(circle at 14px 12px, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) right / 14px 24px repeat-y;
-  padding: 42px 46px;
-}
-
-.mission-quote-shell blockquote {
+.mission-section blockquote {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(29px, 3.4vw, 53px);
   font-weight: 400;
@@ -353,7 +405,9 @@ a {
 
 .value-card {
   border: 1px solid var(--line);
-  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
   padding: 30px;
   position: relative;
 }
@@ -365,40 +419,13 @@ a {
   font-weight: 800;
 }
 
-.value-mark {
-  background: var(--blue-light);
-  border-radius: 45% 55% 54% 46%;
-  height: 90px;
-  margin: 60px 0 38px;
-  position: relative;
-  width: 90px;
-}
-
-.value-card:nth-child(2) .value-mark {
-  background: var(--pink-light);
-  border-radius: 50%;
-}
-
-.value-card:nth-child(3) .value-mark {
-  background: var(--blue);
-  border-radius: 8px 55% 8px 55%;
-}
-
-.value-mark::after {
-  border: 2px solid var(--pink);
-  border-radius: inherit;
-  content: "";
-  inset: 12px -14px -12px 14px;
-  position: absolute;
-}
-
 .value-card h3 {
   color: var(--blue-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 31px;
   font-weight: 400;
   letter-spacing: -0.035em;
-  margin: 0 0 14px;
+  margin: auto 0 14px;
 }
 
 .value-card p {
@@ -594,8 +621,7 @@ a {
   font-size: 19px;
 }
 
-.footer-brand p,
-.footer-note {
+.footer-brand p {
   color: var(--muted);
   font-size: 11px;
   margin: 5px 0 0;
@@ -612,9 +638,28 @@ a {
   font-weight: 700;
 }
 
-.footer-note {
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   justify-self: end;
-  margin: 0;
+  text-align: right;
+}
+
+.footer-contact strong {
+  color: var(--blue-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.footer-contact a {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.footer-contact a:hover {
+  color: var(--pink-dark);
 }
 
 .impact-hero {
@@ -856,20 +901,12 @@ a {
   }
 
   .mission-label {
-    flex-direction: row;
+    min-height: 280px;
   }
 
   .values-grid,
   .media-grid {
     grid-template-columns: 1fr;
-  }
-
-  .value-card {
-    min-height: 330px;
-  }
-
-  .value-mark {
-    margin-top: 40px;
   }
 
   .journey-section {
@@ -886,8 +923,9 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .footer-note {
+  .footer-contact {
     justify-self: start;
+    text-align: left;
   }
 
   .impact-orbit {
@@ -948,10 +986,6 @@ a {
 
   .mission-section blockquote {
     font-size: 29px;
-  }
-
-  .mission-quote-shell {
-    padding: 34px 28px;
   }
 
   .journey-art {

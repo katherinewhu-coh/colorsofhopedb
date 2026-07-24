@@ -36,7 +36,7 @@ export function SiteFooter() {
         </span>
         <div>
           <strong>Colors of Hope</strong>
-          <p>Creativity changes everything.</p>
+          <p>Keeping creativity alive.</p>
         </div>
       </div>
       <div className="footer-links">
@@ -44,9 +44,19 @@ export function SiteFooter() {
         <Link href="/#work">Our work</Link>
         <Link href="/impact">Impact gallery</Link>
       </div>
-      <p className="footer-note">
-        Art kits for children facing hardship.
-      </p>
+      <div className="footer-contact">
+        <strong>Contact us</strong>
+        <a
+          href="https://www.instagram.com/colorsofhopedb/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram: @colorsofhopedb
+        </a>
+        <a href="mailto:colorsofhopedb@gmail.com">
+          colorsofhopedb@gmail.com
+        </a>
+      </div>
     </footer>
   );
 }
