@@ -25,7 +25,8 @@ html {
 body {
   background: var(--white);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -1033,4 +1034,24 @@ a {
   .button {
     transition: none;
   }
+}
+
+.brand-name,
+.home-hero h1,
+.impact-hero h1,
+.mission-section .eyebrow,
+.values-section .section-heading .eyebrow,
+.section-heading h2,
+.journey-copy h2,
+.impact-callout h2,
+.media-heading h2,
+.empty-gallery h2,
+.value-card h3,
+.kit-card-front > strong,
+.journey-copy li strong,
+.footer-brand strong,
+.footer-contact strong,
+.media-card h3 {
+  font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
+  font-weight: 700;
 }
