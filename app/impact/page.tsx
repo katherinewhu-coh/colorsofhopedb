@@ -9,7 +9,7 @@ export default function ImpactPage() {
       <section className="impact-hero">
         <div>
           <p className="eyebrow">Our impact</p>
-          <h1>Hope, captured in color</h1>
+          <h1>Hope, in color</h1>
           <p>
             This gallery grows with each donation made, holding photos, videos,
             and stories behind the art kits we share.
@@ -30,6 +30,11 @@ export default function ImpactPage() {
             <h2>Every meaningful moment</h2>
           </div>
         </div>
+
+        <article className="polaroid-placeholder" aria-label="Donation story placeholder">
+          <div className="polaroid-image" aria-hidden="true" />
+          <p>placeholder</p>
+        </article>
       </section>
 
       <section className="empty-gallery">
