@@ -458,7 +458,7 @@ a {
 
 .journey-art::before {
   aspect-ratio: 320 / 430;
-  background: var(--pink);
+  background: var(--blue-light);
   border-radius: 22px;
   content: "";
   position: absolute;
