@@ -44,7 +44,7 @@ export default function ImpactPage() {
           <span>✦</span>
         </div>
         <p className="eyebrow">The story is just beginning</p>
-        <h2>More moments of hope are on the way</h2>
+        <h2>More moments of hope are on the way!</h2>
         <p>
           This page will continue to grow as Colors of Hope completes more
           donations.
