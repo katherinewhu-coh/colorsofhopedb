@@ -1,164 +1,150 @@
-const colors = [
+import Image from "next/image";
+import Link from "next/link";
+import { SiteFooter, SiteHeader } from "./site-chrome";
+
+const values = [
   {
-    name: "Brahma Purple",
-    hex: "#4B1F6F",
-    rgb: "75, 31, 111",
-    role: "Primary",
-    className: "purple",
+    number: "01",
+    title: "Inspire hope",
+    copy: "A fresh set of art supplies can open a small, bright door when life feels uncertain.",
   },
   {
-    name: "Brahma Gold",
-    hex: "#F4C542",
-    rgb: "244, 197, 66",
-    role: "Accent",
-    className: "gold",
+    number: "02",
+    title: "Make space to express",
+    copy: "Creative play gives children another language for feelings, ideas, and experiences.",
   },
   {
-    name: "Campus Cream",
-    hex: "#FFF9EB",
-    rgb: "255, 249, 235",
-    role: "Background",
-    className: "cream",
-  },
-  {
-    name: "Midnight",
-    hex: "#1C1324",
-    rgb: "28, 19, 36",
-    role: "Text",
-    className: "midnight",
+    number: "03",
+    title: "Build resilience",
+    copy: "Making something of their own helps children practice confidence, choice, and possibility.",
   },
 ];
 
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Diamond Bar colors home">
-          <span className="brand-mark">DB</span>
-          <span>
-            <strong>Diamond Bar</strong>
-            <small>Color Guide</small>
-          </span>
-        </a>
-        <a className="jump-link" href="#palette">
-          View palette <span aria-hidden="true">↓</span>
-        </a>
-      </header>
+      <SiteHeader />
 
-      <section className="hero" id="top">
+      <section className="home-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Diamond Bar High School</p>
+          <p className="eyebrow">Art kits for children facing hardship</p>
           <h1>
-            Purple pride.
-            <br />
-            <span>Gold standard.</span>
+            Creativity changes <em>everything.</em>
           </h1>
-          <p className="intro">
-            A simple digital palette inspired by the colors worn by the
-            Brahmas—confident purple, energetic gold, and calm supporting
-            neutrals.
+          <p className="hero-intro">
+            We help keep imagination within reach by putting joyful, thoughtful
+            art supplies directly into children&apos;s hands.
           </p>
           <div className="hero-actions">
-            <a className="primary-button" href="#palette">
-              Explore the colors
+            <a className="button button-primary" href="#mission">
+              Our mission
             </a>
-            <a
-              className="text-link"
-              href="https://dbhs.wvusd.org/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit DBHS <span aria-hidden="true">↗</span>
-            </a>
+            <Link className="button button-quiet" href="/impact">
+              See our impact <span aria-hidden="true">→</span>
+            </Link>
           </div>
         </div>
 
-        <div className="hero-art" aria-label="Purple and gold color composition">
-          <div className="gold-orbit" />
-          <div className="diamond diamond-one" />
-          <div className="diamond diamond-two" />
-          <div className="hero-monogram">
-            <span>Home of the</span>
-            <strong>Brahmas</strong>
+        <div className="hero-visual" aria-label="Colors of Hope bear mascot">
+          <div className="soft-shape shape-blue" />
+          <div className="soft-shape shape-pink" />
+          <div className="logo-frame logo-frame-hero">
+            <Image
+              src="/colors-of-hope-logo.png"
+              alt="Colors of Hope bear mascot"
+              fill
+              priority
+              sizes="(max-width: 760px) 68vw, 36vw"
+            />
           </div>
+          <span className="doodle doodle-star" aria-hidden="true">✦</span>
+          <span className="doodle doodle-heart" aria-hidden="true">♥</span>
         </div>
       </section>
 
-      <section className="palette-section" id="palette">
+      <section className="mission-section" id="mission">
+        <div className="mission-label">
+          <p className="eyebrow">Our mission</p>
+          <div className="tiny-sun" aria-hidden="true">✳</div>
+        </div>
+        <blockquote>
+          In a world where art is often the first thing lost during difficult
+          circumstances—whether due to school funding cuts, or families
+          struggling financially—Colors of Hope strives to foster creativity by
+          providing art kits for children facing hardship, inspiring hope,
+          self-expression, emotional growth, and resilience.
+        </blockquote>
+      </section>
+
+      <section className="values-section" id="work">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">The palette</p>
-            <h2>Made to stand together.</h2>
+            <p className="eyebrow">Why art matters</p>
+            <h2>Every child deserves room to create.</h2>
           </div>
           <p>
-            Purple and gold lead the way. Cream and midnight keep the palette
-            balanced, clear, and easy to use on screen.
+            Art is more than an activity. It can be a safe place, a voice, and a
+            way forward.
           </p>
         </div>
-
-        <div className="color-grid">
-          {colors.map((color, index) => (
-            <article className={`color-card ${color.className}`} key={color.hex}>
-              <div className="color-top">
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <span>{color.role}</span>
-              </div>
-              <div className="color-details">
-                <h3>{color.name}</h3>
-                <dl>
-                  <div>
-                    <dt>HEX</dt>
-                    <dd>{color.hex}</dd>
-                  </div>
-                  <div>
-                    <dt>RGB</dt>
-                    <dd>{color.rgb}</dd>
-                  </div>
-                </dl>
-              </div>
+        <div className="values-grid">
+          {values.map((value) => (
+            <article className="value-card" key={value.number}>
+              <span>{value.number}</span>
+              <div className="value-mark" aria-hidden="true" />
+              <h3>{value.title}</h3>
+              <p>{value.copy}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="in-action">
-        <div className="action-copy">
-          <p className="eyebrow">In action</p>
-          <h2>A little spirit goes a long way.</h2>
-          <p>
-            Use purple as the foundation, gold for moments of energy, and
-            neutrals to give every message room to breathe.
-          </p>
-        </div>
-        <div className="sample-card">
-          <div className="sample-rings" aria-hidden="true">
-            <span />
-            <span />
-            <span />
+      <section className="journey-section">
+        <div className="journey-art" aria-hidden="true">
+          <div className="kit-card kit-card-back" />
+          <div className="kit-card kit-card-front">
+            <span>Colors of Hope</span>
+            <strong>Art Kit</strong>
+            <div className="kit-rainbow">
+              <i />
+              <i />
+              <i />
+            </div>
           </div>
-          <p>Diamond Bar High School</p>
-          <strong>Go Brahmas!</strong>
-          <span className="sample-tag">Purple Pride • Gold Standard</span>
+        </div>
+        <div className="journey-copy">
+          <p className="eyebrow">From care to creativity</p>
+          <h2>A small kit can carry a lot of hope.</h2>
+          <ol>
+            <li>
+              <span>1</span>
+              <p><strong>Gather with care</strong>Art supplies are thoughtfully selected for joyful, open-ended making.</p>
+            </li>
+            <li>
+              <span>2</span>
+              <p><strong>Pack with purpose</strong>Each kit is assembled to feel personal, complete, and ready to explore.</p>
+            </li>
+            <li>
+              <span>3</span>
+              <p><strong>Share the possibility</strong>Kits reach children and communities navigating difficult circumstances.</p>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <section className="quick-rule">
-        <span className="rule-number">70</span>
-        <p>parts purple</p>
-        <span className="plus">+</span>
-        <span className="rule-number gold-text">20</span>
-        <p>parts gold</p>
-        <span className="plus">+</span>
-        <span className="rule-number neutral-text">10</span>
-        <p>parts neutral</p>
+      <section className="impact-callout">
+        <p className="eyebrow">Growing a gallery of good</p>
+        <h2>Every donation has a story.</h2>
+        <p>
+          Our impact page is ready to hold the photos, videos, and moments that
+          show what your support makes possible.
+        </p>
+        <Link className="button button-white" href="/impact">
+          Visit our impact page <span aria-hidden="true">→</span>
+        </Link>
       </section>
 
-      <footer>
-        <p>
-          A community-made color study celebrating Diamond Bar High School.
-        </p>
-        <p>Diamond Bar, California</p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

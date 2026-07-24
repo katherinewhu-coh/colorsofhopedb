@@ -1,11 +1,44 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Diamond Bar High School Colors",
-  description:
-    "A digital color guide celebrating Diamond Bar High School's purple and gold.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const requestHeaders = await headers();
+  const host =
+    requestHeaders.get("x-forwarded-host") ??
+    requestHeaders.get("host") ??
+    "colorsofhopedb-two.vercel.app";
+  const protocol = requestHeaders.get("x-forwarded-proto") ?? "https";
+  const baseUrl = new URL(`${protocol}://${host}`);
+  const socialImage = new URL("/og.png", baseUrl).toString();
+
+  return {
+    metadataBase: baseUrl,
+    title: {
+      default: "Colors of Hope | Creativity Changes Everything",
+      template: "%s | Colors of Hope",
+    },
+    description:
+      "Colors of Hope provides art kits for children facing hardship, inspiring hope, self-expression, emotional growth, and resilience.",
+    icons: {
+      icon: "/colors-of-hope-logo.png",
+      shortcut: "/colors-of-hope-logo.png",
+      apple: "/colors-of-hope-logo.png",
+    },
+    openGraph: {
+      title: "Colors of Hope",
+      description: "Creativity changes everything.",
+      type: "website",
+      images: [{ url: socialImage, width: 1732, height: 908 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Colors of Hope",
+      description: "Creativity changes everything.",
+      images: [socialImage],
+    },
+  };
+}
 
 export default function RootLayout({
   children,
