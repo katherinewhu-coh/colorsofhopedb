@@ -6,17 +6,17 @@ const values = [
   {
     number: "01",
     title: "Inspire hope",
-    copy: "A fresh set of art supplies can open a small, bright door when life feels uncertain.",
+    copy: "A new set of art supplies can bring light, comfort, and a sense of normalcy, even when the future seems uncertain.",
   },
   {
     number: "02",
-    title: "Make space to express",
-    copy: "Creative play gives children another language for feelings, ideas, and experiences.",
+    title: "Encourage self-expression",
+    copy: "Art gives children another language to express their feelings, ideas, and experiences, supporting social and emotional development.",
   },
   {
     number: "03",
     title: "Build resilience",
-    copy: "Making something of their own helps children practice confidence, choice, and possibility.",
+    copy: "Creative freedom helps children practice confidence and foster a sense of control and accomplishment.",
   },
 ];
 
@@ -28,12 +28,10 @@ export default function Home() {
       <section className="home-hero">
         <div className="hero-copy">
           <p className="eyebrow">Art kits for children facing hardship</p>
-          <h1>
-            Creativity changes <em>everything.</em>
-          </h1>
+          <h1>Colors of Hope</h1>
           <p className="hero-intro">
-            We help keep imagination within reach by putting joyful, thoughtful
-            art supplies directly into children&apos;s hands.
+            Keeping creativity alive by putting thoughtful art supplies
+            directly into children&apos;s hands.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#mission">
@@ -67,13 +65,15 @@ export default function Home() {
           <p className="eyebrow">Our mission</p>
           <div className="tiny-sun" aria-hidden="true">✳</div>
         </div>
-        <blockquote>
-          In a world where art is often the first thing lost during difficult
-          circumstances—whether due to school funding cuts, or families
-          struggling financially—Colors of Hope strives to foster creativity by
-          providing art kits for children facing hardship, inspiring hope,
-          self-expression, emotional growth, and resilience.
-        </blockquote>
+        <div className="mission-quote-shell">
+          <blockquote>
+            In a world where art is often the first thing lost during difficult
+            circumstances—whether due to school funding cuts, or families
+            struggling financially—Colors of Hope strives to foster creativity by
+            providing art kits for children facing hardship, inspiring hope,
+            self-expression, emotional growth, and resilience.
+          </blockquote>
+        </div>
       </section>
 
       <section className="values-section" id="work">
@@ -83,8 +83,9 @@ export default function Home() {
             <h2>Every child deserves room to create.</h2>
           </div>
           <p>
-            Art is more than an activity. It can be a safe place, a voice, and a
-            way forward.
+            Art is more than just an activity. It is a way for children to
+            express themselves, build their creativity, and find hope even
+            during difficult times.
           </p>
         </div>
         <div className="values-grid">

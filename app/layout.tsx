@@ -10,12 +10,12 @@ export async function generateMetadata(): Promise<Metadata> {
     "colorsofhopedb-two.vercel.app";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? "https";
   const baseUrl = new URL(`${protocol}://${host}`);
-  const socialImage = new URL("/og.png", baseUrl).toString();
+  const socialImage = new URL("/og-v2.png", baseUrl).toString();
 
   return {
     metadataBase: baseUrl,
     title: {
-      default: "Colors of Hope | Creativity Changes Everything",
+      default: "Colors of Hope",
       template: "%s | Colors of Hope",
     },
     description:
@@ -27,14 +27,16 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     openGraph: {
       title: "Colors of Hope",
-      description: "Creativity changes everything.",
+      description:
+        "Keeping creativity alive by putting thoughtful art supplies directly into children's hands.",
       type: "website",
       images: [{ url: socialImage, width: 1732, height: 908 }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Colors of Hope",
-      description: "Creativity changes everything.",
+      description:
+        "Keeping creativity alive by putting thoughtful art supplies directly into children's hands.",
       images: [socialImage],
     },
   };

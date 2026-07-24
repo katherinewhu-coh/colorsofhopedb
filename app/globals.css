@@ -151,12 +151,6 @@ a {
   margin: 0;
 }
 
-.home-hero h1 em {
-  color: var(--pink-dark);
-  display: block;
-  font-weight: 400;
-}
-
 .hero-intro {
   color: var(--muted);
   font-size: 18px;
@@ -263,12 +257,18 @@ a {
   color: white;
   display: grid;
   gap: 7vw;
-  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-columns: 0.22fr 0.78fr;
   padding: 110px 8vw;
 }
 
 .mission-section .eyebrow {
   color: var(--pink-light);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 2.3vw, 36px);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  text-transform: none;
 }
 
 .mission-label {
@@ -283,7 +283,16 @@ a {
   font-size: 62px;
 }
 
-.mission-section blockquote {
+.mission-quote-shell {
+  background:
+    radial-gradient(circle at 12px 0, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) top / 24px 14px repeat-x,
+    radial-gradient(circle at 12px 14px, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) bottom / 24px 14px repeat-x,
+    radial-gradient(circle at 0 12px, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) left / 14px 24px repeat-y,
+    radial-gradient(circle at 14px 12px, transparent 8px, var(--pink) 8.5px 10.5px, transparent 11px) right / 14px 24px repeat-y;
+  padding: 42px 46px;
+}
+
+.mission-quote-shell blockquote {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(29px, 3.4vw, 53px);
   font-weight: 400;
@@ -304,6 +313,15 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
+}
+
+.values-section .section-heading .eyebrow {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 2.3vw, 36px);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  text-transform: none;
 }
 
 .section-heading h2,
@@ -343,8 +361,8 @@ a {
 .value-card > span {
   color: var(--pink-dark);
   font-family: "Courier New", monospace;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .value-mark {
@@ -930,6 +948,10 @@ a {
 
   .mission-section blockquote {
     font-size: 29px;
+  }
+
+  .mission-quote-shell {
+    padding: 34px 28px;
   }
 
   .journey-art {
