@@ -20,7 +20,7 @@ export function SiteHeader() {
         <Link href="/#work">Our work</Link>
         <Link href="/impact">Our impact</Link>
       </nav>
-      <Link className="header-cta" href="/impact">
+      <Link className="header-cta" href="/impact" hidden>
         See the hope <span aria-hidden="true">↗</span>
       </Link>
     </header>
@@ -40,9 +40,9 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-links">
-        <Link href="/#mission">Mission</Link>
+        <Link href="/#mission">Our mission</Link>
         <Link href="/#work">Our work</Link>
-        <Link href="/impact">Impact gallery</Link>
+        <Link href="/impact">Our impact</Link>
       </div>
       <div className="footer-contact">
         <strong>Contact us</strong>
