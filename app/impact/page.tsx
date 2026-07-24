@@ -33,7 +33,14 @@ export default function ImpactPage() {
 
         <article className="polaroid-placeholder" aria-label="Donation story placeholder">
           <div className="polaroid-image" aria-hidden="true" />
-          <p>placeholder</p>
+            <Image
+              className="polaroid-image"
+              src="/Handmade cards.heic"
+              alt="Handmade cards drawn by the Colors of Hope team"
+              width={600}
+              height={600}
+            />
+          <p>Handmade cards drawn by the Colors of Hope team!</p>
         </article>
       </section>
 
