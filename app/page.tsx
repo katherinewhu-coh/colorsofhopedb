@@ -87,7 +87,11 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Why art matters</p>
-            <h2>Every child deserves room to create.</h2>
+            <h2>
+              Every child deserves room
+              <br />
+              to create
+            </h2>
           </div>
           <p>
             Art is more than just an activity. It is a way for children to
@@ -121,30 +125,30 @@ export default function Home() {
         </div>
         <div className="journey-copy">
           <p className="eyebrow">From care to creativity</p>
-          <h2>A small kit can carry a lot of hope.</h2>
+          <h2>A small kit can carry a lot of hope</h2>
           <ol>
             <li>
               <span>1</span>
-              <p><strong>Gather with care</strong>Art supplies are thoughtfully selected for joyful, open-ended making.</p>
+              <p><strong>Gather with care</strong>Coloring pages are all hand drawn and all art supplies are thoughtfully selected to encourage open-ended making.</p>
             </li>
             <li>
               <span>2</span>
-              <p><strong>Pack with purpose</strong>Each kit is assembled to feel personal, complete, and ready to explore.</p>
+              <p><strong>Pack with purpose</strong>Each kit is assembled with care, ensuring each one feels complete and ready to be explored.</p>
             </li>
             <li>
               <span>3</span>
-              <p><strong>Share the possibility</strong>Kits reach children and communities navigating difficult circumstances.</p>
+              <p><strong>Share the love</strong>Kits are brought to children navigating difficult circumstances to bring them positivity and strength!</p>
             </li>
           </ol>
         </div>
       </section>
 
       <section className="impact-callout">
-        <p className="eyebrow">Growing a gallery of good</p>
-        <h2>Every donation has a story.</h2>
+        <p className="eyebrow">Growing a gallery</p>
+        <h2>Every donation has a story</h2>
         <p>
-          Our impact page is ready to hold the photos, videos, and moments that
-          show what your support makes possible.
+          Our impact page hold photos, videos, and moments that show what your
+          support makes possible!
         </p>
         <Link className="button button-white" href="/impact">
           Visit our impact page <span aria-hidden="true">→</span>

@@ -92,7 +92,7 @@ a {
 
 .site-header nav a {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   transition: color 160ms ease;
 }
@@ -167,6 +167,11 @@ a {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 34px;
+}
+
+.hero-actions .button {
+  font-size: 14px;
+  padding: 19px 28px;
 }
 
 .button {
@@ -318,9 +323,9 @@ a {
 .mission-principles {
   color: rgba(255, 255, 255, 0.72);
   display: grid;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
-  gap: 10px;
+  gap: 14px;
   letter-spacing: 0.14em;
   list-style: none;
   margin: 38px 0;
@@ -338,8 +343,8 @@ a {
   background: var(--pink);
   border-radius: 50%;
   content: "";
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
 }
 
 .tiny-sun {
@@ -348,10 +353,10 @@ a {
 }
 
 .mission-section blockquote {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
   font-size: clamp(29px, 3.4vw, 53px);
   font-weight: 400;
-  letter-spacing: -0.035em;
+  letter-spacing: 0.008em;
   line-height: 1.25;
   margin: 0;
 }
@@ -410,7 +415,7 @@ a {
   border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  min-height: 330px;
+  min-height: 310px;
   padding: 30px;
   position: relative;
 }
@@ -428,7 +433,7 @@ a {
   font-size: 31px;
   font-weight: 400;
   letter-spacing: -0.035em;
-  margin: auto 0 14px;
+  margin: 42px 0 14px;
 }
 
 .value-card p {
@@ -521,6 +526,16 @@ a {
 
 .journey-copy {
   align-self: center;
+}
+
+.journey-copy .eyebrow,
+.impact-callout .eyebrow {
+  font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
+  font-size: clamp(24px, 2.3vw, 36px);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-transform: none;
 }
 
 .journey-copy ol {
@@ -637,7 +652,7 @@ a {
 
 .footer-links a {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -1054,4 +1069,5 @@ a {
 .media-card h3 {
   font-family: var(--font-fredoka), "Arial Rounded MT Bold", Arial, sans-serif;
   font-weight: 700;
+  letter-spacing: 0.01em;
 }

@@ -30,7 +30,7 @@ export default function ImpactPage() {
       <section className="impact-hero">
         <div>
           <p className="eyebrow">Our impact</p>
-          <h1>Hope, captured in color.</h1>
+          <h1>Hope, captured in color</h1>
           <p>
             This gallery will grow with every donation—holding the photos,
             videos, and stories behind the art kits we share.
@@ -48,7 +48,7 @@ export default function ImpactPage() {
         <div className="section-heading media-heading">
           <div>
             <p className="eyebrow">Donation stories</p>
-            <h2>A space ready for every meaningful moment.</h2>
+            <h2>A space ready for every meaningful moment</h2>
           </div>
           <p>
             When you have donation photos or videos, they can be added here as
@@ -85,7 +85,7 @@ export default function ImpactPage() {
           <span>✦</span>
         </div>
         <p className="eyebrow">The story is just beginning</p>
-        <h2>More moments of hope are on the way.</h2>
+        <h2>More moments of hope are on the way</h2>
         <p>
           This page is intentionally ready to grow as Colors of Hope completes
           more kit drives and donations.
