@@ -456,11 +456,23 @@ a {
   position: relative;
 }
 
+.journey-art::before {
+  aspect-ratio: 320 / 430;
+  background: var(--pink);
+  border-radius: 22px;
+  content: "";
+  position: absolute;
+  transform: rotate(-10deg) translate(-30px, 12px);
+  width: min(62%, 320px);
+}
+
 .art-kit-image {
   height: auto;
   max-width: 620px;
   object-fit: contain;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .journey-copy {
