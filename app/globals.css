@@ -725,12 +725,10 @@ a {
 }
 
 .polaroid-image {
-  height: auto;
-  max-width: 100%;
-  object-fit: contain;
-  position: relative;
-  width: 100%;
-  z-indez: 1;
+  background:
+    radial-gradient(circle at 72% 24%, var(--pink) 0 9%, transparent 9.5%),
+    linear-gradient(145deg, var(--blue-light), var(--blue-mist));
+  aspect-ratio: 1 / 0.82;
 }
 
 .polaroid-placeholder p {

@@ -31,15 +31,9 @@ export default function ImpactPage() {
           </div>
         </div>
 
-        <article className="polaroid-placeholder" aria-label="Donation story placeholder"> 
-          <Image
-            className="polaroid-image"
-            src="/Packing together.jpg"
-            alt="The Colors of Hope team packing art kits together"
-            width={600}
-            height={600}
-          />
-          <p>The Colors of Hope team packing art kits together</p>
+        <article className="polaroid-placeholder" aria-label="Donation story placeholder">
+          <div className="polaroid-image" aria-hidden="true" />
+          <p>placeholder</p>
         </article>
       </section>
 
