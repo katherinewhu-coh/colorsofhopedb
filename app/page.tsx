@@ -106,17 +106,15 @@ export default function Home() {
       </section>
 
       <section className="journey-section">
-        <div className="journey-art" aria-hidden="true">
-          <div className="kit-card kit-card-back" />
-          <div className="kit-card kit-card-front">
-            <span>Colors of Hope</span>
-            <strong>Art Kit</strong>
-            <div className="kit-rainbow">
-              <i />
-              <i />
-              <i />
-            </div>
-          </div>
+        <div className="journey-art">
+          <Image
+            className="art-kit-image"
+            src="/art-kit-clipart.png"
+            alt="A Colors of Hope art kit with coloring supplies, a pencil, and a teddy bear"
+            width={900}
+            height={900}
+            sizes="(max-width: 900px) 90vw, 42vw"
+          />
         </div>
         <div className="journey-copy">
           <p className="eyebrow">From care to creativity</p>
