@@ -35,12 +35,12 @@ export default function ImpactPage() {
           <div className="polaroid-image" aria-hidden="true" />
             <Image
               className="polaroid-image"
-              src="/Handmade cards.heic"
-              alt="Handmade cards drawn by the Colors of Hope team"
+              src="/Packing together.jpg"
+              alt="The Colors of Hope team packing art kits together"
               width={600}
               height={600}
             />
-          <p>Handmade cards drawn by the Colors of Hope team!</p>
+          <p>The Colors of Hope team packing art kits together</p>
         </article>
       </section>
 
