@@ -48,7 +48,7 @@ export default function Home() {
           <div className="soft-shape shape-pink" />
           <div className="logo-frame logo-frame-hero">
             <Image
-              src="/colors-of-hope-logo.png"
+              src="/colors-of-hope-logo-v2.png"
               alt="Colors of Hope bear mascot"
               fill
               priority

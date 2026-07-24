@@ -21,9 +21,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Colors of Hope provides art kits for children facing hardship, inspiring hope, self-expression, emotional growth, and resilience.",
     icons: {
-      icon: "/colors-of-hope-logo.png",
-      shortcut: "/colors-of-hope-logo.png",
-      apple: "/colors-of-hope-logo.png",
+      icon: "/colors-of-hope-logo-v2.png",
+      shortcut: "/colors-of-hope-logo-v2.png",
+      apple: "/colors-of-hope-logo-v2.png",
     },
     openGraph: {
       title: "Colors of Hope",

@@ -7,7 +7,7 @@ export function SiteHeader() {
       <Link className="brand" href="/" aria-label="Colors of Hope home">
         <span className="logo-frame logo-frame-header">
           <Image
-            src="/colors-of-hope-logo.png"
+            src="/colors-of-hope-logo-v2.png"
             alt=""
             fill
             sizes="48px"
@@ -32,7 +32,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-brand">
         <span className="logo-frame logo-frame-footer">
-          <Image src="/colors-of-hope-logo.png" alt="" fill sizes="64px" />
+          <Image src="/colors-of-hope-logo-v2.png" alt="" fill sizes="64px" />
         </span>
         <div>
           <strong>Colors of Hope</strong>

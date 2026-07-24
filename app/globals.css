@@ -65,7 +65,9 @@ a {
 
 .logo-frame img {
   object-fit: cover;
-  transform: scale(1.17);
+  object-position: 39% 50%;
+  transform: scale(1.78) translateY(-4%);
+  transform-origin: center;
 }
 
 .logo-frame-header {
@@ -258,7 +260,7 @@ a {
   display: grid;
   gap: 7vw;
   grid-template-columns: 0.3fr 0.7fr;
-  margin: 28px 0;
+  margin: 14px 0;
   padding: 120px 8vw;
   position: relative;
 }
@@ -266,7 +268,7 @@ a {
 .mission-section::before,
 .mission-section::after {
   content: "";
-  height: 29px;
+  height: 15px;
   left: 0;
   pointer-events: none;
   position: absolute;
@@ -275,20 +277,20 @@ a {
 
 .mission-section::before {
   background: radial-gradient(
-    circle at 15px 29px,
-    var(--blue) 0 15px,
-    transparent 15.5px
-  ) 0 0 / 30px 29px repeat-x;
-  top: -28px;
+    60px 15px at 50% 100%,
+    var(--blue) 98%,
+    transparent 101%
+  ) 0 0 / 120px 15px repeat-x;
+  top: -14px;
 }
 
 .mission-section::after {
   background: radial-gradient(
-    circle at 15px 0,
-    var(--blue) 0 15px,
-    transparent 15.5px
-  ) 0 0 / 30px 29px repeat-x;
-  bottom: -28px;
+    60px 15px at 50% 0,
+    var(--blue) 98%,
+    transparent 101%
+  ) 0 0 / 120px 15px repeat-x;
+  bottom: -14px;
 }
 
 .mission-section .eyebrow {
