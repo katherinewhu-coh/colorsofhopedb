@@ -1,5 +1,27 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
+
+const donationStories = [
+  {
+    src: "/impact-handmade-cards.webp",
+    alt: "A collection of colorful handmade encouragement cards",
+    title: "Handmade cards",
+    description: "Handmade cards filled with encouragement and care.",
+  },
+  {
+    src: "/impact-packing-together.webp",
+    alt: "Volunteers packing Colors of Hope art kits together",
+    title: "Packing together",
+    description: "Packing every art kit together with care.",
+  },
+  {
+    src: "/impact-art-kits.webp",
+    alt: "Completed Colors of Hope art kits ready for donation",
+    title: "Art kits",
+    description: "Finished art kits ready to bring creativity and hope.",
+  },
+];
 
 export default function ImpactPage() {
   return (
@@ -31,10 +53,24 @@ export default function ImpactPage() {
           </div>
         </div>
 
-        <article className="polaroid-placeholder" aria-label="Donation story placeholder">
-          <div className="polaroid-image" aria-hidden="true" />
-          <p>placeholder</p>
-        </article>
+        <div className="polaroid-grid">
+          {donationStories.map((story) => (
+            <figure className="polaroid-card" key={story.title}>
+              <div className="polaroid-photo">
+                <Image
+                  src={story.src}
+                  alt={story.alt}
+                  fill
+                  sizes="(max-width: 900px) 90vw, 30vw"
+                />
+              </div>
+              <figcaption>
+                <strong>{story.title}</strong>
+                <span>{story.description}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className="empty-gallery">
