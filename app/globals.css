@@ -751,6 +751,7 @@ a {
 
 .polaroid-card figcaption {
   display: grid;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
   gap: 8px;
   padding: 24px 8px 0;
   text-align: center;
@@ -770,7 +771,6 @@ a {
 
 .polaroid-description {
   color: var(--muted);
-  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
   font-size: 17px;
   line-height: 1.5;
 }
