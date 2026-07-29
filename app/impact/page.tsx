@@ -66,7 +66,8 @@ export default function ImpactPage() {
               </div>
               <figcaption>
                 <strong>{story.title}</strong>
-                <span>{story.description}</span>
+                <time dateTime="2026-07-23">7-23-2026</time>
+                <span className="polaroid-description">{story.description}</span>
               </figcaption>
             </figure>
           ))}
