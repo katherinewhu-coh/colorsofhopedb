@@ -36,7 +36,7 @@ export function SiteFooter() {
         </span>
         <div>
           <strong>Colors of Hope</strong>
-          <p>Keeping creativity alive.</p>
+          <p>Inspiring hope and creativity.</p>
         </div>
       </div>
       <div className="footer-links">
