@@ -7,19 +7,19 @@ const donationStories = [
     src: "/impact-handmade-cards.webp",
     alt: "A collection of colorful handmade encouragement cards",
     title: "Handmade cards",
-    description: "Handmade cards filled with encouragement and care.",
+    description: "Handmade cards filled with encouraging messages and art",
   },
   {
     src: "/impact-packing-together.webp",
-    alt: "Volunteers packing Colors of Hope art kits together",
+    alt: "Members packing Colors of Hope art kits together",
     title: "Packing together",
-    description: "Packing every art kit together with care.",
+    description: "Colors of Hope board members thoughtfully packing art kits",
   },
   {
     src: "/impact-art-kits.webp",
     alt: "Completed Colors of Hope art kits ready for donation",
     title: "Art kits",
-    description: "Finished art kits ready to bring creativity and hope.",
+    description: "Finished art kits ready to inspire creativity and hope",
   },
 ];
 
