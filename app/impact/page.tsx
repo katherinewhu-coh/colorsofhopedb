@@ -23,15 +23,15 @@ const donationStories = [
   },
   {
     src: "/impact-donating.webp",
-    alt: "Colors of Hope members carrying bins of art kits to donate",
+    alt: "Carrying finished art kits to donate to a shelter",
     title: "Bringing the kits",
-    description: "Carrying completed art kits into the community",
+    description: "Carrying 25 finished art kits to donate",
   },
   {
     src: "/impact-donation.webp",
-    alt: "Colors of Hope members holding completed art kits on donation day",
+    alt: "Holding completed art kits on donation day",
     title: "Donation day",
-    description: "Sharing finished art kits with care and hope",
+    description: "Sharing completed art kits to families at Foothill Family Shelter",
   },
 ];
 
