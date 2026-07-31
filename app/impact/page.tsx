@@ -21,6 +21,18 @@ const donationStories = [
     title: "Art kits",
     description: "Finished art kits ready to inspire creativity and hope",
   },
+  {
+    src: "/impact-donating.webp",
+    alt: "Colors of Hope members carrying bins of art kits to donate",
+    title: "Bringing the kits",
+    description: "Carrying completed art kits into the community",
+  },
+  {
+    src: "/impact-donation.webp",
+    alt: "Colors of Hope members holding completed art kits on donation day",
+    title: "Donation day",
+    description: "Sharing finished art kits with care and hope",
+  },
 ];
 
 export default function ImpactPage() {

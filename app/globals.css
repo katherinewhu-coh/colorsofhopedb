@@ -718,8 +718,9 @@ a {
 .polaroid-grid {
   align-items: start;
   display: grid;
-  gap: clamp(24px, 3vw, 44px);
+  column-gap: clamp(24px, 3vw, 44px);
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: clamp(60px, 7vw, 92px);
 }
 
 .polaroid-card {
@@ -727,15 +728,42 @@ a {
   box-shadow: 0 18px 45px rgba(70, 83, 121, 0.16);
   margin: 0;
   padding: 14px 14px 30px;
-  transform: rotate(-1.2deg);
+  position: relative;
+  transform: translateY(10px) rotate(-1.7deg);
+}
+
+.polaroid-card::before {
+  background: var(--pink);
+  border: 2px solid rgba(201, 127, 128, 0.5);
+  border-radius: 50%;
+  box-shadow:
+    inset -3px -3px 0 rgba(201, 127, 128, 0.3),
+    inset 3px 3px 0 rgba(255, 255, 255, 0.55),
+    0 4px 7px rgba(70, 83, 121, 0.3);
+  content: "";
+  height: 18px;
+  left: 50%;
+  position: absolute;
+  top: 6px;
+  transform: translateX(-50%);
+  width: 18px;
+  z-index: 3;
 }
 
 .polaroid-card:nth-child(2) {
-  transform: translateY(16px) rotate(1deg);
+  transform: translateY(34px) rotate(1.4deg);
 }
 
 .polaroid-card:nth-child(3) {
-  transform: rotate(-0.5deg);
+  transform: translateY(4px) rotate(-0.6deg);
+}
+
+.polaroid-card:nth-child(4) {
+  transform: translateY(28px) rotate(1.8deg);
+}
+
+.polaroid-card:nth-child(5) {
+  transform: translateY(2px) rotate(-1.3deg);
 }
 
 .polaroid-photo {
@@ -954,7 +982,9 @@ a {
   }
 
   .polaroid-card:nth-child(2),
-  .polaroid-card:nth-child(3) {
+  .polaroid-card:nth-child(3),
+  .polaroid-card:nth-child(4),
+  .polaroid-card:nth-child(5) {
     transform: none;
   }
 
