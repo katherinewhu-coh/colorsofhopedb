@@ -19,6 +19,13 @@ export function SiteHeader() {
         <Link href="/#mission">Our mission</Link>
         <Link href="/#work">Our work</Link>
         <Link href="/impact">Our impact</Link>
+        <a
+          href="https://hcb.hackclub.com/donations/start/colors-of-hope"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Donate
+        </a>
       </nav>
       <Link className="header-cta" href="/impact" hidden>
         See the hope <span aria-hidden="true">↗</span>
@@ -43,6 +50,13 @@ export function SiteFooter() {
         <Link href="/#mission">Our mission</Link>
         <Link href="/#work">Our work</Link>
         <Link href="/impact">Our impact</Link>
+        <a
+          href="https://hcb.hackclub.com/donations/start/colors-of-hope"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Donate
+        </a>
       </div>
       <div className="footer-contact">
         <strong>Contact us</strong>
