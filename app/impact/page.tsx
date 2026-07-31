@@ -8,30 +8,40 @@ const donationStories = [
     alt: "A collection of colorful handmade encouragement cards",
     title: "Handmade cards",
     description: "Handmade cards filled with encouraging messages and art",
+    date: "7-23-2026",
+    dateTime: "2026-07-23",
   },
   {
     src: "/impact-packing-together.webp",
     alt: "Members packing Colors of Hope art kits together",
     title: "Packing together",
     description: "Colors of Hope board members thoughtfully packing art kits",
+    date: "7-23-2026",
+    dateTime: "2026-07-23",
   },
   {
     src: "/impact-art-kits.webp",
     alt: "Completed Colors of Hope art kits ready for donation",
     title: "Art kits",
     description: "Finished art kits ready to inspire creativity and hope",
+    date: "7-23-2026",
+    dateTime: "2026-07-23",
   },
   {
     src: "/impact-donating.webp",
     alt: "Carrying finished art kits to donate to a shelter",
     title: "Bringing the kits",
     description: "Carrying 25 finished art kits to donate",
+    date: "7-31-2026",
+    dateTime: "2026-07-31",
   },
   {
     src: "/impact-donation.webp",
     alt: "Holding completed art kits on donation day",
     title: "Donation day",
     description: "Sharing completed art kits to families at Foothill Family Shelter",
+    date: "7-31-2026",
+    dateTime: "2026-07-31",
   },
 ];
 
@@ -78,7 +88,7 @@ export default function ImpactPage() {
               </div>
               <figcaption>
                 <strong>{story.title}</strong>
-                <time dateTime="2026-07-23">7-23-2026</time>
+                <time dateTime={story.dateTime}>{story.date}</time>
                 <span className="polaroid-description">{story.description}</span>
               </figcaption>
             </figure>
