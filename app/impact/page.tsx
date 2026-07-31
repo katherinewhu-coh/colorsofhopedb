@@ -12,14 +12,6 @@ const donationStories = [
     dateTime: "2026-07-23",
   },
   {
-    src: "/impact-packing-together.webp",
-    alt: "Members packing Colors of Hope art kits together",
-    title: "Packing together",
-    description: "Colors of Hope board members thoughtfully packing art kits",
-    date: "7-23-2026",
-    dateTime: "2026-07-23",
-  },
-  {
     src: "/impact-art-kits.webp",
     alt: "Completed Colors of Hope art kits ready for donation",
     title: "Art kits",
