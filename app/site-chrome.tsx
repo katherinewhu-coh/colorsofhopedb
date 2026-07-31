@@ -10,7 +10,7 @@ export function SiteHeader() {
             src="/colors-of-hope-logo-v2.png"
             alt=""
             fill
-            sizes="48px"
+            sizes="128px"
           />
         </span>
         <span className="brand-name">Colors of Hope</span>
